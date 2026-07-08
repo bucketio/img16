@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430" role="img" aria-labelledby="title desc">
+  <title id="title">无痕模式隐藏本机记录</title>
+  <desc id="desc">展示无痕模式会减少浏览器本机历史、Cookie、表单和缓存记录。</desc>
+  <rect width="900" height="430" fill="#ffffff"/>
+  <text x="48" y="68" font-family="Arial, sans-serif" font-size="33" font-weight="700" fill="#182033">主要隐藏：这台电脑上的痕迹</text>
+  <text x="50" y="108" font-family="Arial, sans-serif" font-size="21" fill="#5f6b80">关闭无痕窗口后，浏览器少保存本机记录</text>
+  <rect x="70" y="155" width="760" height="205" rx="22" fill="#f6f7fb" stroke="#d9deea" stroke-width="3"/>
+  <g font-family="Arial, sans-serif" font-size="22">
+    <rect x="112" y="198" width="300" height="48" rx="16" fill="#edf5ff"/>
+    <text x="145" y="229" fill="#2f6bd9" font-weight="700">浏览历史</text>
+    <rect x="112" y="274" width="300" height="48" rx="16" fill="#edf5ff"/>
+    <text x="145" y="305" fill="#2f6bd9" font-weight="700">表单输入</text>
+    <rect x="488" y="198" width="300" height="48" rx="16" fill="#e8f7ef"/>
+    <text x="521" y="229" fill="#24704d" font-weight="700">临时 Cookie</text>
+    <rect x="488" y="274" width="300" height="48" rx="16" fill="#e8f7ef"/>
+    <text x="521" y="305" fill="#24704d" font-weight="700">临时缓存</text>
+  </g>
+  <text x="183" y="390" font-family="Arial, sans-serif" font-size="20" fill="#5f6b80">适合共享电脑、临时登录、不想留下本机历史记录的场景</text>
+</svg>
