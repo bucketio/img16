@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430" role="img" aria-labelledby="title desc">
+  <title id="title">银狐常见伪装方式</title>
+  <desc id="desc">银狐常伪装成办公通知、发票、工资表、会议材料和软件下载文件。</desc>
+  <rect width="900" height="430" fill="#ffffff"/>
+  <text x="48" y="65" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#182033">它看起来往往像普通办公文件</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="80" y="135" width="170" height="90" rx="18" fill="#edf5ff"/>
+    <text x="118" y="190" font-size="23" font-weight="700" fill="#2f6bd9">工资表</text>
+    <rect x="280" y="135" width="170" height="90" rx="18" fill="#fff5df"/>
+    <text x="323" y="190" font-size="23" font-weight="700" fill="#946200">发票</text>
+    <rect x="480" y="135" width="170" height="90" rx="18" fill="#e8f7ef"/>
+    <text x="523" y="190" font-size="23" font-weight="700" fill="#24704d">合同</text>
+    <rect x="680" y="135" width="170" height="90" rx="18" fill="#f6f7fb"/>
+    <text x="720" y="190" font-size="23" font-weight="700" fill="#334155">通知</text>
+    <rect x="155" y="275" width="590" height="62" rx="24" fill="#202938"/>
+    <text x="198" y="314" font-size="22" font-weight="700" fill="#ffffff">危险点：不要只看文件名和图标，要看来源与扩展名</text>
+  </g>
+</svg>
