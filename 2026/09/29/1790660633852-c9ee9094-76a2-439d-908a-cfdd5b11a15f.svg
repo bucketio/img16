@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="560" viewBox="0 0 680 560">
+  <title>Warlock 飞行员模式体系与操纵语义</title>
+  <desc>五种飞行员模式的含义与激活接口,接管与释放的语义,操纵量的绝对位置与增量积分两类语义,以及无活跃手动飞行员时的保持链。</desc>
+
+  <!-- 背景 -->
+  <rect x="0" y="0" width="680" height="560" fill="#ffffff"/>
+
+  <!-- 顶部:接管/释放语义 -->
+  <rect x="24" y="20" width="632" height="64" rx="10" fill="#eef4f9" stroke="#1d5f8a" stroke-width="1.2"/>
+  <text x="340" y="46" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="14.5" font-weight="600" fill="#1f2328">接管与释放的本质:激活哪一种飞行员</text>
+  <text x="340" y="68" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="12.5" fill="#4a5158">人工接管 = 激活 MANUAL / AUGMENTED · 释放平台 = 切回 SYNTHETIC · 同一时刻仅控制一个平台</text>
+
+  <!-- 五种飞行员模式 -->
+  <text x="24" y="122" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13" font-weight="600" fill="#4a5158">五种飞行员模式(P6DofPilotManager / wsf::six_dof::PilotManager)</text>
+
+  <!-- MANUAL -->
+  <rect x="24" y="138" width="122" height="104" rx="10" fill="#eef4f9" stroke="#1d5f8a" stroke-width="1.4"/>
+  <text x="85" y="162" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13.5" font-weight="600" fill="#1d5f8a">MANUAL</text>
+  <text x="85" y="182" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11.5" fill="#1f2328">人工直接操纵</text>
+  <text x="85" y="204" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#8a9199">ManualPilotActive</text>
+  <text x="85" y="220" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#8a9199">Simple / Augmented</text>
+
+  <!-- AUGMENTED -->
+  <rect x="156" y="138" width="122" height="104" rx="10" fill="#eef4f9" stroke="#1d5f8a" stroke-width="1.4"/>
+  <text x="217" y="162" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13.5" font-weight="600" fill="#1d5f8a">AUGMENTED</text>
+  <text x="217" y="182" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11.5" fill="#1f2328">增稳手动(CAS)</text>
+  <text x="217" y="204" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#8a9199">AugmentedPilot</text>
+  <text x="217" y="220" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#8a9199">Manual 含 CAS 形态</text>
+
+  <!-- HARDWARE -->
+  <rect x="288" y="138" width="122" height="104" rx="10" fill="#fafbfc" stroke="#e0e3e7" stroke-width="1"/>
+  <text x="349" y="162" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13.5" font-weight="600" fill="#1f2328">HARDWARE</text>
+  <text x="349" y="182" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11.5" fill="#4a5158">硬件自驾</text>
+  <text x="349" y="204" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#8a9199">HardwareAutopilot</text>
+  <text x="349" y="220" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#8a9199">保持姿态 / 速度</text>
+
+  <!-- GUIDANCE -->
+  <rect x="420" y="138" width="122" height="104" rx="10" fill="#fafbfc" stroke="#e0e3e7" stroke-width="1"/>
+  <text x="481" y="162" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13.5" font-weight="600" fill="#1f2328">GUIDANCE</text>
+  <text x="481" y="182" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11.5" fill="#4a5158">引导自驾</text>
+  <text x="481" y="204" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#8a9199">GuidanceAutopilot</text>
+  <text x="481" y="220" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#8a9199">沿航线飞行</text>
+
+  <!-- SYNTHETIC -->
+  <rect x="552" y="138" width="104" height="104" rx="10" fill="#ffffff" stroke="#1d5f8a" stroke-width="1.8"/>
+  <text x="604" y="162" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13.5" font-weight="600" fill="#1d5f8a">SYNTHETIC</text>
+  <text x="604" y="182" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11.5" fill="#4a5158">合成飞行员</text>
+  <text x="604" y="204" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#8a9199">SyntheticPilot</text>
+  <text x="604" y="220" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="10.5" fill="#8a9199">自治 / 任务执行</text>
+
+  <!-- 操纵语义两卡 -->
+  <text x="24" y="282" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13" font-weight="600" fill="#4a5158">两类操纵量语义,决定停发指令后的行为</text>
+
+  <rect x="24" y="298" width="312" height="96" rx="10" fill="#fafbfc" stroke="#e0e3e7" stroke-width="1"/>
+  <text x="180" y="322" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13.5" font-weight="600" fill="#1f2328">绝对位置:杆 / 舵 / 油门</text>
+  <text x="180" y="344" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11.5" fill="#4a5158">取值 [-1,1],油门经加力联动后 [0,2]</text>
+  <text x="180" y="362" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11.5" fill="#4a5158">停止发送时保持最后位置</text>
+  <text x="180" y="381" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11" fill="#8a9199">直至合成飞行员接管</text>
+
+  <rect x="344" y="298" width="312" height="96" rx="10" fill="#fafbfc" stroke="#e0e3e7" stroke-width="1"/>
+  <text x="500" y="322" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13.5" font-weight="600" fill="#1f2328">增量积分:减速板 / 配平</text>
+  <text x="500" y="344" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11.5" fill="#4a5158">值 = 方向 × 两次命令间隔 Δt(秒)</text>
+  <text x="500" y="362" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11.5" fill="#4a5158">停止发送即停止变化</text>
+  <text x="500" y="381" text-anchor="middle" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="11" fill="#8a9199">位置钳位 [0,1]</text>
+
+  <!-- fallback 链 -->
+  <text x="24" y="434" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="13" font-weight="600" fill="#4a5158">未激活手动飞行员就推杆:按次序回退,避免平台无控</text>
+
+  <rect x="24" y="450" width="632" height="86" rx="10" fill="#eef4f9" stroke="#1d5f8a" stroke-width="1"/>
+  <text x="52" y="476" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="12.5" font-weight="600" fill="#1d5f8a">① 硬件自驾活跃</text>
+  <text x="196" y="476" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="12" fill="#4a5158">HoldPitchAngle + HoldBankAngle + HoldSpeedKCAS</text>
+  <text x="52" y="500" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="12.5" font-weight="600" fill="#1d5f8a">② 引导自驾活跃</text>
+  <text x="196" y="500" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="12" fill="#4a5158">HoldAltitude + HoldHeading + HoldSpeedKTAS</text>
+  <text x="52" y="524" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="12.5" font-weight="600" fill="#1d5f8a">③ 合成飞行员活跃</text>
+  <text x="196" y="524" font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif" font-size="12" fill="#4a5158">不动作,保持当前状态(参照 JoystickSimCommands.cpp:172-223)</text>
+</svg>
