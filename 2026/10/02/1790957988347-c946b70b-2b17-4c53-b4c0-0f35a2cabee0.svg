@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 1004" width="760" height="1004">
+<defs>
+  <style>
+    text { font-family: -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; }
+    .mono { font-family: 'SF Mono', Menlo, Consolas, monospace; }
+  </style>
+  <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#1D4ED8"/><stop offset="100%" stop-color="#60A5FA"/></linearGradient>
+  <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#C2410C"/><stop offset="100%" stop-color="#FB923C"/></linearGradient>
+  <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#15803D"/><stop offset="100%" stop-color="#4ADE80"/></linearGradient>
+  <linearGradient id="gPurple" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#6D28D9"/><stop offset="100%" stop-color="#A78BFA"/></linearGradient>
+  <linearGradient id="gSlate" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#475569"/><stop offset="100%" stop-color="#94A3B8"/></linearGradient>
+  <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#0F766E"/><stop offset="100%" stop-color="#2DD4BF"/></linearGradient>
+  <filter id="shadowSm"><feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#64748B" flood-opacity="0.12"/></filter>
+  <marker id="arr_gray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#94A3B8"/></marker>
+  <marker id="arr_green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#22C55E"/></marker>
+  <marker id="arr_blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#3B82F6"/></marker>
+  <marker id="arr_orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#F97316"/></marker>
+  <marker id="arr_red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#EF4444"/></marker>
+</defs>
+<rect width="760" height="1004" fill="#F8FAFC"/>
+<text x="380" y="48" font-size="26" font-weight="800" fill="#0F172A" text-anchor="middle">想起来:回复之前,它先去翻什么</text>
+<text x="380" y="76" font-size="14" font-weight="400" fill="#64748B" text-anchor="middle">Active Memory 在每条用户消息进来、提示词拼好之前跑一遍</text>
+<rect x="190" y="100" width="380" height="44" rx="12" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1" filter="url(#shadowSm)"/>
+<text x="380" y="128" font-size="15" font-weight="700" fill="#1E40AF" text-anchor="middle">你发来一条消息</text>
+<line x1="380" y1="146" x2="380" y2="170" stroke="#94A3B8" stroke-width="2" marker-end="url(#arr_gray)"/>
+<rect x="70" y="172" width="620" height="76" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" filter="url(#shadowSm)"/>
+<text x="380" y="198" font-size="13.5" font-weight="700" fill="#0F172A" text-anchor="middle">先过资格检查</text>
+<rect x="90" y="212" width="120" height="26" rx="13" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+<text x="150.0" y="229.5" font-size="11.5" font-weight="400" fill="#475569" text-anchor="middle">是用户消息</text>
+<rect x="220" y="212" width="140" height="26" rx="13" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+<text x="290.0" y="229.5" font-size="11.5" font-weight="400" fill="#475569" text-anchor="middle">不是会话间消息</text>
+<rect x="370" y="212" width="150" height="26" rx="13" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+<text x="445.0" y="229.5" font-size="11.5" font-weight="400" fill="#475569" text-anchor="middle">不是 harness 会话</text>
+<rect x="530" y="212" width="100" height="26" rx="13" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+<text x="580.0" y="229.5" font-size="11.5" font-weight="400" fill="#475569" text-anchor="middle">没被暂停</text>
+<line x1="380" y1="250" x2="380" y2="274" stroke="#94A3B8" stroke-width="2" marker-end="url(#arr_gray)"/>
+<rect x="100" y="276" width="560" height="84" rx="12" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1" filter="url(#shadowSm)"/>
+<text x="380" y="302" font-size="14" font-weight="700" fill="#1E40AF" text-anchor="middle">车道 1:确定性检索,不调模型</text>
+<text x="380" y="326" font-size="12.5" font-weight="400" fill="#1E3A8A" text-anchor="middle">只搜笔记,只收晋升过的可信条目,得分 ≥ 0.65</text>
+<text x="380" y="346" font-size="12.5" font-weight="400" fill="#1E3A8A" text-anchor="middle">最多注入 3 条、1800 字符</text>
+<line x1="380" y1="362" x2="380" y2="384" stroke="#94A3B8" stroke-width="2" marker-end="url(#arr_gray)"/>
+<g filter="url(#shadowSm)"><polygon points="380,386 510,438 380,490 250,438" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/></g>
+<text x="380" y="442" font-size="15" font-weight="700" fill="#0F172A" text-anchor="middle">有强命中?</text>
+<line x1="510" y1="438" x2="566" y2="438" stroke="#22C55E" stroke-width="2" marker-end="url(#arr_green)"/>
+<text x="538" y="430" font-size="12" font-weight="700" fill="#16A34A" text-anchor="middle">有</text>
+<rect x="568" y="414" width="152" height="48" rx="12" fill="#F0FDF4" stroke="#86EFAC" stroke-width="1" filter="url(#shadowSm)"/>
+<text x="644" y="443" font-size="12.5" font-weight="700" fill="#166534" text-anchor="middle">直接注入,不升级</text>
+<line x1="380" y1="492" x2="380" y2="530" stroke="#94A3B8" stroke-width="2" marker-end="url(#arr_gray)"/>
+<text x="392" y="516" font-size="12" font-weight="700" fill="#64748B" text-anchor="start">没有</text>
+<g filter="url(#shadowSm)"><polygon points="380,532 530,594 380,656 230,594" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/></g>
+<text x="380" y="592" font-size="15" font-weight="700" fill="#0F172A" text-anchor="middle">像在问过去的事?</text>
+<text x="380" y="614" font-size="11" font-weight="400" fill="#64748B" text-anchor="middle">回忆意图,正则判断,含中日韩</text>
+<line x1="530" y1="594" x2="566" y2="594" stroke="#94A3B8" stroke-width="2" marker-end="url(#arr_gray)"/>
+<text x="548" y="586" font-size="12" font-weight="700" fill="#64748B" text-anchor="middle">不是</text>
+<rect x="568" y="566" width="152" height="56" rx="12" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1" filter="url(#shadowSm)"/>
+<text x="644" y="590" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">跳过深度召回,</text>
+<text x="644" y="608" font-size="12" font-weight="400" fill="#475569" text-anchor="middle">只留一句提示</text>
+<line x1="380" y1="658" x2="380" y2="696" stroke="#F97316" stroke-width="2.5" marker-end="url(#arr_orange)"/>
+<text x="392" y="682" font-size="12" font-weight="700" fill="#9A3412" text-anchor="start">是</text>
+<rect x="70" y="698" width="620" height="196" rx="12" fill="#FFF7ED" stroke="#FDBA74" stroke-width="1.5" filter="url(#shadowSm)"/>
+<text x="380" y="726" font-size="14.5" font-weight="700" fill="#9A3412" text-anchor="middle">车道 2:阻塞式记忆子 agent</text>
+<text x="380" y="750" font-size="12.5" font-weight="400" fill="#7C2D12" text-anchor="middle">只能调 memory_search 和 memory_get,不能直接回答你</text>
+<text x="380" y="774" font-size="12.5" font-weight="700" fill="#7C2D12" text-anchor="middle">开了 rememberAcrossConversations:</text>
+<text x="380" y="794" font-size="12.5" font-weight="400" fill="#7C2D12" text-anchor="middle">还能搜同一个 agent 其他私聊的转录</text>
+<text x="380" y="814" font-size="12.5" font-weight="400" fill="#7C2D12" text-anchor="middle">排除群聊、频道、cron、心跳、子 agent 和当前会话</text>
+<text x="380" y="844" font-size="12.5" font-weight="700" fill="#7C2D12" text-anchor="middle">结果:NONE,或不超过 220 字的一行摘要</text>
+<text x="380" y="868" font-size="12" font-weight="400" fill="#B45309" text-anchor="middle">默认最多等 15 秒</text>
+<line x1="380" y1="896" x2="380" y2="924" stroke="#94A3B8" stroke-width="2" marker-end="url(#arr_gray)"/>
+<rect x="70" y="926" width="620" height="52" rx="12" fill="url(#gBlue)" filter="url(#shadowSm)"/>
+<text x="380" y="957" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">摘要拼在你的消息前面,主 agent 才开始回复</text>
+</svg>
