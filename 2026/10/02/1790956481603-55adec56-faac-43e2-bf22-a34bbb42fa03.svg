@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 654" width="760" height="654">
+<defs>
+  <style>
+    text { font-family: -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; }
+    .mono { font-family: 'SF Mono', Menlo, Consolas, monospace; }
+  </style>
+  <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#1D4ED8"/><stop offset="100%" stop-color="#60A5FA"/></linearGradient>
+  <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#C2410C"/><stop offset="100%" stop-color="#FB923C"/></linearGradient>
+  <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#15803D"/><stop offset="100%" stop-color="#4ADE80"/></linearGradient>
+  <linearGradient id="gPurple" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#6D28D9"/><stop offset="100%" stop-color="#A78BFA"/></linearGradient>
+  <linearGradient id="gSlate" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#475569"/><stop offset="100%" stop-color="#94A3B8"/></linearGradient>
+  <linearGradient id="gTeal" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#0F766E"/><stop offset="100%" stop-color="#2DD4BF"/></linearGradient>
+  <filter id="shadowSm"><feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#64748B" flood-opacity="0.12"/></filter>
+  <marker id="arr_gray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#94A3B8"/></marker>
+  <marker id="arr_green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#22C55E"/></marker>
+  <marker id="arr_blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#3B82F6"/></marker>
+  <marker id="arr_orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#F97316"/></marker>
+  <marker id="arr_red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#EF4444"/></marker>
+</defs>
+<rect width="760" height="654" fill="#F8FAFC"/>
+<text x="380" y="48" font-size="26" font-weight="800" fill="#0F172A" text-anchor="middle">/reset 只是在转录里画一条线</text>
+<text x="380" y="76" font-size="14" font-weight="400" fill="#64748B" text-anchor="middle">同一个 key,同一个 id,同一份转录</text>
+<rect x="40" y="100" width="680" height="54" rx="12" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1" filter="url(#shadowSm)"/>
+<text x="60" y="124" font-size="12" font-weight="700" fill="#1E40AF" text-anchor="start">sessionKey</text>
+<text class="mono" x="140" y="124" font-size="13" font-weight="700" fill="#1E40AF" text-anchor="start">agent:main:main</text>
+<text x="380" y="124" font-size="12" font-weight="700" fill="#9A3412" text-anchor="start">sessionId</text>
+<text class="mono" x="450" y="124" font-size="13" font-weight="700" fill="#9A3412" text-anchor="start">3f2a9c71-…</text>
+<text x="60" y="144" font-size="12" font-weight="400" fill="#64748B" text-anchor="start">重置前后,这两个都没变</text>
+<rect x="40" y="206" width="104" height="62" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" filter="url(#shadowSm)"/>
+<text x="92" y="232" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">消息 1</text>
+<text x="92" y="254" font-size="12" font-weight="400" fill="#64748B" text-anchor="middle">你</text>
+<rect x="154" y="206" width="104" height="62" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" filter="url(#shadowSm)"/>
+<text x="206" y="232" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">消息 2</text>
+<text x="206" y="254" font-size="12" font-weight="400" fill="#64748B" text-anchor="middle">agent</text>
+<rect x="268" y="206" width="104" height="62" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" filter="url(#shadowSm)"/>
+<text x="320" y="232" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">消息 3</text>
+<text x="320" y="254" font-size="12" font-weight="400" fill="#64748B" text-anchor="middle">你</text>
+<line x1="392" y1="176" x2="392" y2="298" stroke="#EF4444" stroke-width="3" stroke-dasharray="6 4"/>
+<rect x="322" y="166" width="140" height="28" rx="14" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="1"/>
+<text x="392" y="185" font-size="12.5" font-weight="700" fill="#B91C1C" text-anchor="middle">/reset 重置边界</text>
+<rect x="424" y="206" width="124" height="62" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" filter="url(#shadowSm)"/>
+<text x="486" y="232" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">消息 4</text>
+<text x="486" y="254" font-size="12" font-weight="400" fill="#64748B" text-anchor="middle">你</text>
+<rect x="558" y="206" width="124" height="62" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" filter="url(#shadowSm)"/>
+<text x="620" y="232" font-size="14" font-weight="700" fill="#0F172A" text-anchor="middle">消息 5</text>
+<text x="620" y="254" font-size="12" font-weight="400" fill="#64748B" text-anchor="middle">agent</text>
+<text x="700" y="242" font-size="16" font-weight="700" fill="#94A3B8" text-anchor="middle">……</text>
+<path d="M40,282 V294 H370 V282" fill="none" stroke="#8B5CF6" stroke-width="2.5"/>
+<path d="M424,282 V294 H692 V282" fill="none" stroke="#3B82F6" stroke-width="2.5"/>
+<line x1="205" y1="330" x2="205" y2="298" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#arr_gray)"/>
+<line x1="558" y1="330" x2="558" y2="298" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#arr_gray)"/>
+<rect x="40" y="338" width="330" height="150" rx="12" fill="#F5F3FF" stroke="#C4B5FD" stroke-width="1" filter="url(#shadowSm)"/>
+<text x="58" y="366" font-size="14" font-weight="700" fill="#5B21B6" text-anchor="start">带 messageId 去读</text>
+<text x="58" y="392" font-size="12.5" font-weight="400" fill="#4C1D95" text-anchor="start">sessions_history,messageId 指向</text>
+<text x="58" y="412" font-size="12.5" font-weight="400" fill="#4C1D95" text-anchor="start">重置边界之前的某条消息</text>
+<text x="58" y="442" font-size="12.5" font-weight="700" fill="#4C1D95" text-anchor="start">把那个已经关上的区间原样打开,</text>
+<text x="58" y="462" font-size="12.5" font-weight="700" fill="#4C1D95" text-anchor="start">不会混进重置之后的新对话</text>
+<rect x="390" y="338" width="330" height="150" rx="12" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1" filter="url(#shadowSm)"/>
+<text x="408" y="366" font-size="14" font-weight="700" fill="#1E40AF" text-anchor="start">不带 messageId</text>
+<text x="408" y="392" font-size="12.5" font-weight="400" fill="#1E3A8A" text-anchor="start">sessions_history 默认只给</text>
+<text x="408" y="412" font-size="12.5" font-weight="400" fill="#1E3A8A" text-anchor="start">最近一次重置之后的那一截</text>
+<text x="408" y="442" font-size="12.5" font-weight="700" fill="#1E3A8A" text-anchor="start">默认读到的,</text>
+<text x="408" y="462" font-size="12.5" font-weight="700" fill="#1E3A8A" text-anchor="start">就是线右边这一段</text>
+<rect x="40" y="520" width="680" height="110" rx="12" fill="#0F172A" stroke="#0F172A" stroke-width="1" filter="url(#shadowSm)"/>
+<text x="64" y="550" font-size="14" font-weight="700" fill="#FBBF24" text-anchor="start">所以</text>
+<text x="64" y="578" font-size="13" font-weight="400" fill="#E2E8F0" text-anchor="start">重置不是删除:线左边的内容还在转录里,只是默认不读。</text>
+<text x="64" y="600" font-size="13" font-weight="400" fill="#E2E8F0" text-anchor="start">要读,就带上 messageId 去打开。找 messageId,就靠 sessions_search。</text>
+</svg>
