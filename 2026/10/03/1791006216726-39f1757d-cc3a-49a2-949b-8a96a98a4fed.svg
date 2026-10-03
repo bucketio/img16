@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" width="900" height="440" font-family="'Microsoft YaHei','PingFang SC','Hiragino Sans GB',sans-serif">
+  <title>L2 与 L3 责任边界对比图</title>
+  <desc>从驾驶主体、驾驶员状态、责任主体、接管要求、安全基线、数据留痕六个维度对比 L2 组合驾驶辅助与 L3 有条件自动驾驶。</desc>
+  <rect width="900" height="440" fill="#FFFFFF"/>
+  <text x="50" y="46" font-size="18" font-weight="500" fill="#2C2C2A">L2 与 L3：责任边界对比</text>
+
+  <rect x="50" y="70" width="160" height="42" rx="6" fill="#F1EFE8" stroke="#D3D1C7" stroke-width="1"/>
+  <text x="130" y="97" font-size="14" font-weight="500" fill="#444441" text-anchor="middle">维度</text>
+  <rect x="225" y="70" width="300" height="42" rx="6" fill="#E6F1FB" stroke="#185FA5" stroke-width="1.5"/>
+  <text x="375" y="97" font-size="14" font-weight="500" fill="#0C447C" text-anchor="middle">L2 组合驾驶辅助</text>
+  <rect x="540" y="70" width="310" height="42" rx="6" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.5"/>
+  <text x="695" y="97" font-size="14" font-weight="500" fill="#0F6E56" text-anchor="middle">L3 有条件自动驾驶</text>
+
+  <line x1="525" y1="112" x2="525" y2="410" stroke="#B4B2A9" stroke-width="1.5" stroke-dasharray="5 4"/>
+
+  <g font-size="13">
+    <rect x="50" y="112" width="160" height="50" fill="#FAFAF8"/>
+    <rect x="225" y="112" width="300" height="50" fill="#F5F9FE"/>
+    <rect x="540" y="112" width="310" height="50" fill="#F0FAF6"/>
+    <line x1="50" y1="162" x2="850" y2="162" stroke="#E5E3DC" stroke-width="1"/>
+    <text x="70" y="143" fill="#5F5E5A">驾驶主体</text>
+    <text x="245" y="143" fill="#2C2C2A">人</text>
+    <text x="560" y="143" fill="#2C2C2A">系统（设计运行条件内）</text>
+
+    <rect x="50" y="162" width="160" height="50" fill="#FAFAF8"/>
+    <rect x="225" y="162" width="300" height="50" fill="#F5F9FE"/>
+    <rect x="540" y="162" width="310" height="50" fill="#F0FAF6"/>
+    <line x1="50" y1="212" x2="850" y2="212" stroke="#E5E3DC" stroke-width="1"/>
+    <text x="70" y="193" fill="#5F5E5A">驾驶员状态</text>
+    <text x="245" y="193" fill="#2C2C2A">手不离盘、眼不离路</text>
+    <text x="560" y="193" fill="#2C2C2A">可脱手、脱眼</text>
+
+    <rect x="50" y="212" width="160" height="50" fill="#FAFAF8"/>
+    <rect x="225" y="212" width="300" height="50" fill="#FCEBEB"/>
+    <rect x="540" y="212" width="310" height="50" fill="#F0FAF6"/>
+    <line x1="50" y1="262" x2="850" y2="262" stroke="#E5E3DC" stroke-width="1"/>
+    <text x="70" y="243" fill="#5F5E5A">责任主体</text>
+    <text x="245" y="243" fill="#A32D2D" font-weight="500">驾驶员</text>
+    <text x="560" y="243" fill="#0F6E56" font-weight="500">车企 / 生产者</text>
+
+    <rect x="50" y="262" width="160" height="50" fill="#FAFAF8"/>
+    <rect x="225" y="262" width="300" height="50" fill="#F5F9FE"/>
+    <rect x="540" y="262" width="310" height="50" fill="#F0FAF6"/>
+    <line x1="50" y1="312" x2="850" y2="312" stroke="#E5E3DC" stroke-width="1"/>
+    <text x="70" y="293" fill="#5F5E5A">接管要求</text>
+    <text x="245" y="293" fill="#2C2C2A">全程监管，随时介入</text>
+    <text x="560" y="293" fill="#2C2C2A">系统请求时接管</text>
+
+    <rect x="50" y="312" width="160" height="50" fill="#FAFAF8"/>
+    <rect x="225" y="312" width="300" height="50" fill="#F5F9FE"/>
+    <rect x="540" y="312" width="310" height="50" fill="#F0FAF6"/>
+    <line x1="50" y1="362" x2="850" y2="362" stroke="#E5E3DC" stroke-width="1"/>
+    <text x="70" y="343" fill="#5F5E5A">安全基线</text>
+    <text x="245" y="343" fill="#2C2C2A">无统一强制标准</text>
+    <text x="560" y="343" fill="#2C2C2A">不低于“合格且专注驾驶人”</text>
+
+    <rect x="50" y="362" width="160" height="48" fill="#FAFAF8"/>
+    <rect x="225" y="362" width="300" height="48" fill="#F5F9FE"/>
+    <rect x="540" y="362" width="310" height="48" fill="#F0FAF6"/>
+    <text x="70" y="392" fill="#5F5E5A">数据留痕</text>
+    <text x="245" y="392" fill="#2C2C2A">无强制要求</text>
+    <text x="560" y="392" fill="#2C2C2A">激活、退出全程留痕</text>
+  </g>
+
+  <rect x="50" y="410" width="800" height="1" fill="#D3D1C7"/>
+  <text x="50" y="431" font-size="12" fill="#888780">当前 L3 为附条件准入：限定路段、限定车速，驾驶员须随时准备接管</text>
+</svg>
